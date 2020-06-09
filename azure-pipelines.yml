@@ -20,3 +20,6 @@ steps:
 - task: blahblahblah@0
   inputs:
     samplestring: 'wtf'
+- task: blahblahblah@0
+  inputs:
+    samplestring: 'ascascascasc'
