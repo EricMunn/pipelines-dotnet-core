@@ -18,3 +18,13 @@ steps:
 #   displayName: 'dotnet build $(buildConfiguration)'
 
 - task: EDRSetDeploymentParameters@1
+
+- script: |
+    echo $(buildConfiguration)
+    echo $(package.version);
+    echo $(package.create);
+    echo $(assembly.version);
+    echo $(deploy.tenant);
+    echo $(deploy.options);
+    echo $(deploy.environment);
+    echo $(deploy.channel);
