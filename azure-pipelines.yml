@@ -5,7 +5,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
+- develop
+- feature/*
+- tenant/*
+- release/*
 
 pool:
   vmImage: 'ubuntu-latest'
